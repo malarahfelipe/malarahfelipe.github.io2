@@ -19,6 +19,7 @@ cd dist
 
 echo Deploying..
 git init
+git checkout gh-pages
 git add -A
 git commit -m 'deploy'
 
