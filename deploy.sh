@@ -20,11 +20,11 @@ cd dist
 echo Deploying..
 git init
 git remote add origin git@github.com:malarahfelipe/malarahfelipe.github.io.git
-git checkout -b gh-pages
+git checkout -b master
 git add -A
 git commit -m 'deploy'
 
 # deploy
-git push -f origin gh-pages
+git push -f origin master
 
 cd ..
