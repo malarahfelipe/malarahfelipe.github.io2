@@ -28,3 +28,4 @@ git commit -m 'deploy'
 git push -f origin master
 
 cd ..
+git checkout gh-pages
