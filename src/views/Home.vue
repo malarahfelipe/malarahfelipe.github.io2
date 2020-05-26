@@ -10,11 +10,8 @@
 </style>
 <script lang="ts">
 // @ is an alias to /src
-import Loading from '@/components/Loading.vue'
-import Stepper from '@/components/Stepper.vue'
 import { Component } from 'vue-property-decorator'
 import Vue from 'vue'
-import { Step } from '@/models/step'
 
 @Component({
   components: {
