@@ -19,7 +19,7 @@ cd dist
 
 echo Deploying..
 git init
-git remote set-url origin git@github.com:malarahfelipe/malarahfelipe.github.io.git
+git remote add origin git@github.com:malarahfelipe/malarahfelipe.github.io.git
 git checkout -b gh-pages
 git add -A
 git commit -m 'deploy'
