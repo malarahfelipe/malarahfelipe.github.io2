@@ -1,0 +1,104 @@
+// variables
+
+@import "node_modules/bootstrap/scss/bootstrap";
+$primary-gradient:  $secondary;
+$secondary-gradient:  lighten($primary-gradient, 30%);
+$thertiary-gradient: lighten($primary-gradient, 50%);
+$gradient-deg: 90deg;
+html, body {
+  height: 100%;
+  background-color: #e6dcf5 !important;
+}
+.breadcrumb {
+  background-color: transparent !important;
+  margin: 5px 0 !important;
+  padding: 11px 25px !important;
+
+  &-item {
+    color: #959cb6 !important;
+    font-weight: 500 !important;
+
+    a {
+      color: #959cb6 !important;
+      font-weight: 500 !important;
+    }
+
+    &.active {
+      color: #7280b3 !important;
+    }
+  }
+}
+.gradient {
+  background: linear-gradient($gradient-deg, rgba($primary-gradient, 0.9) 0%, rgba($secondary-gradient, 0.6) 35%, rgba($thertiary-gradient, 0.3) 100%) !important;
+}
+.reverse-gradient {
+  background: linear-gradient($gradient-deg, rgba($thertiary-gradient, 0.9) 0%, rgba($secondary-gradient, 0.6) 35%, rgba($primary-gradient, 0.3) 100%) !important;
+}
+.linear-header {
+  font-family: monospace;
+  color: white;
+  font-size: 25px;
+  @extend .gradient;
+}
+.lifted-header {
+  text-align: center;
+  padding-left: 15px;
+  margin-left: 30%;
+  margin-right: 30%;
+  font-weight: 900;
+  color: $secondary-gradient;
+  border: 0.8px solid;
+  position: relative;
+  top: -10px;
+  background-color: whitesmoke !important;
+  padding: 0.75rem 1.25rem;
+  box-shadow: 0 4px 2px -2px gray;
+  width: fit-content;
+  align-self: center;
+}
+.box-shadow-bottom {
+  box-shadow: 0px 10px 50px 5px black;
+}
+.btn:focus {
+  box-shadow: none !important;
+}
+
+.invalid-feedback {
+  display: block !important;
+}
+
+.card {
+  border-radius: 2.5px;
+  border: thin solid rgba(7, 4, 4, 0.12);
+  box-shadow: 0 4px 5px -2px rgba(0,0,0,.2),0 7px 10px 1px rgba(0,0,0,.14),0 2px 16px 1px rgba(0,0,0,.12)!important;
+
+  &-header, &-footer {
+    background-color: transparent !important;
+  }
+}
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+
+.accordion .card {
+  box-shadow: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.125) !important;
+
+  &:first-child {
+    border-top: none !important;
+  }
+}
+.disable-hover{
+  pointer-events: none;
+}
+.golden-text {
+  color: darkgoldenrod;
+  font-weight: 700;
+}
+html {
+  font-size: 14px;
+  background-color: #e6dcf5 !important;
+}
+.text-start {
+  text-align: start;
+}
